@@ -1,0 +1,160 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:orientation = "vertical"
+    android:padding="15dp"
+    android:id="@+id/ll_bg">
+
+    <TextView
+        android:id="@+id/txtll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Safe"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/txtcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="case..."
+            android:background="@drawable/white_bg"
+            android:textSize="40dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reco..."
+            android:layout_margin="2dp"
+            android:background="@drawable/green_bg"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/txtdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dth..."
+            android:textSize="40dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@drawable/red_bg"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outside Home"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/edit_isinside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loding..." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance from Home"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/edit_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loding..." />
+
+
+    <TextView
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Location Details"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/edit_lati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loding..." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitute"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/edit_longi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loding..." />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Set Location as Home"
+        android:background="@drawable/button"
+        android:id="@+id/btn_ssethome"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Request Location as Hotspot"
+        android:background="@drawable/button"
+        android:id="@+id/request"/>
+
+</LinearLayout>

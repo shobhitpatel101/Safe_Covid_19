@@ -1,0 +1,136 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:orientation = "vertical"
+    android:padding="15dp"
+    android:id="@+id/ll_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/txtll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay Safe"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/txtcase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="case..."
+                android:background="@drawable/white_bg"
+                android:textSize="40dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recover"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/txtreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reco..."
+                android:layout_margin="2dp"
+                android:background="@drawable/green_bg"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deceased"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/txtdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dth..."
+                android:textSize="40dp"
+                android:layout_margin="2dp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:background="@drawable/red_bg"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:textSize="10dp"
+        android:textColor="#fff"
+        android:layout_gravity="right"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Request Location as Hotspot"
+        android:background="@drawable/button"
+        android:id="@+id/request"/>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.safe.Map"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
